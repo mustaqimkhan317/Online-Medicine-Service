@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1055.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="javafxapplication.ManagementController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="558.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Boss_user_man_business_supervisor_female.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="39.0" text="Name" />
+      <Label layoutX="27.0" layoutY="65.0" text="age" />
+      <Label layoutX="27.0" layoutY="97.0" text="Sex" />
+      <Label layoutX="25.0" layoutY="128.0" text="Address" />
+      <Label layoutX="20.0" layoutY="164.0" text="Designation" />
+      <Label fx:id="name" layoutX="135.0" layoutY="39.0" text="Label" />
+      <Label fx:id="age" layoutX="135.0" layoutY="65.0" text="Label" />
+      <Label fx:id="address" layoutX="135.0" layoutY="128.0" text="Label" />
+      <Label fx:id="sex" layoutX="135.0" layoutY="97.0" text="Label" />
+      <Label fx:id="designation" layoutX="135.0" layoutY="164.0" text="Label" />
+      <TableView fx:id="tablem" layoutX="37.0" layoutY="235.0" prefHeight="238.0" prefWidth="528.0">
+         <columns>
+            <TableColumn fx:id="pptid" prefWidth="88.99996948242188" text="Product  ID" />
+            <TableColumn fx:id="pptname" prefWidth="107.00003051757812" text="Drugs Name" />
+            <TableColumn fx:id="pptc" prefWidth="94.0" text="Category" />
+            <TableColumn fx:id="ppts" prefWidth="64.0" text="Stock" />
+            <TableColumn fx:id="pptprice" prefWidth="68.0" text="Price" />
+            <TableColumn fx:id="pptsold" prefWidth="138.0" text="Sold" />
+         </columns>
+      </TableView>
+      <TextField fx:id="pid" layoutX="361.0" layoutY="520.0" promptText="Product ID" />
+      <TextField fx:id="quantity" layoutX="361.0" layoutY="567.0" promptText="Quantity" />
+      <Button layoutX="123.0" layoutY="727.0" mnemonicParsing="false" onAction="#addpatient" text="Add Patiert" />
+      <Button layoutX="410.0" layoutY="616.0" mnemonicParsing="false" onAction="#quantityadd" text="Add" />
+      <Button layoutX="664.0" layoutY="727.0" mnemonicParsing="false" onAction="#addrug" text="Add Product" />
+      <Button layoutX="894.0" layoutY="727.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Label fx:id="error" layoutX="558.0" layoutY="545.0" text="Label" />
+      <TextField fx:id="mpid" layoutX="799.0" layoutY="235.0" promptText="patient-id" />
+      <TextField fx:id="mpname" layoutX="799.0" layoutY="260.0" promptText="patient-name" />
+      <TextField fx:id="mpsex" layoutX="798.0" layoutY="285.0" promptText="patient-sex" />
+      <TextField fx:id="mpage" layoutX="799.0" layoutY="310.0" promptText="patient-age" />
+      <TextField fx:id="mpad" layoutX="799.0" layoutY="335.0" promptText="patient-address" />
+      <TextField fx:id="mpdate" layoutX="799.0" layoutY="360.0" promptText="patient-add_date" />
+      <TextField fx:id="mpdis" layoutX="801.0" layoutY="385.0" promptText="patient_disease" />
+      <TextField fx:id="mprid" layoutX="799.0" layoutY="450.0" promptText="product_id" />
+      <TextField fx:id="mprname" layoutX="799.0" layoutY="486.0" promptText="product-name" />
+      <TextField fx:id="mprstock" layoutX="781.0" layoutY="567.0" promptText="product-stock" />
+      <TextField fx:id="mprprice" layoutX="789.0" layoutY="604.0" promptText="product-price" />
+      <TextField fx:id="mprsold" layoutX="780.0" layoutY="647.0" promptText="product-sold" />
+      <TextField fx:id="mprcat" layoutX="772.0" layoutY="520.0" promptText="product-category" />
+      <Label fx:id="perror" layoutX="650.0" layoutY="302.0" text="Label" />
+      <Label fx:id="prerror" layoutX="650.0" layoutY="478.0" text="Label" />
+   </children>
+</AnchorPane>

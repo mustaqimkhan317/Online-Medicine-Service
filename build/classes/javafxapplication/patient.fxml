@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="947.0" stylesheets="@../CSS/Dark.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.PatientController">
+   <left>
+      <AnchorPane prefHeight="559.0" prefWidth="193.0" style="-fx-background-color: #282C34;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="126.0" fitWidth="135.0" layoutX="39.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@man-icon-38995.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="62.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleButtonAction1" text="Logout" />
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="33.0" prefWidth="670.0" style="-fx-background-color: #373c48;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="264.0" layoutY="9.0" opacity="0.74" prefHeight="21.0" prefWidth="449.0" text="© Souvik Kundu, Faisal Rahman, Mustakim Khan, Rifat Ahsan " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </bottom>
+   <center>
+      <JFXTabPane BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab text="Profile">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutY="14.0" prefHeight="577.0" prefWidth="756.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="577.0" prefWidth="374.0">
+                                 <children>
+                                    <Label alignment="CENTER" text="Name" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" text="ID" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" text="Age" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" text="Sex" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="35.0" prefWidth="129.0" text="Address" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" text="Diseases" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="220.0" prefWidth="318.0">
+                                 <children>
+                                    <Label fx:id="name" alignment="CENTER" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Label" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="id" alignment="CENTER" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Label" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="age" alignment="CENTER" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Label" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="sex" alignment="CENTER" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Label" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="address" alignment="CENTER" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Label" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="diseases" alignment="CENTER" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Label" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Prescription">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table" layoutY="14.0" prefHeight="321.0" prefWidth="728.0">
+                           <columns>
+                              <TableColumn fx:id="doctor_id" prefWidth="168.0" text="Doctor ID" />
+                              <TableColumn fx:id="doctor_name" prefWidth="152.0" text="Doctor Name" />
+                              <TableColumn fx:id="product_name" prefWidth="137.0" text="Product Name" />
+                              <TableColumn fx:id="product_id" prefWidth="93.0" text="Product ID" />
+                              <TableColumn fx:id="dose" prefWidth="97.0" text="dose" />
+                              <TableColumn fx:id="stock" text="Price" />
+                           </columns>
+                        </TableView>
+                        <HBox layoutX="11.0" layoutY="335.0" prefHeight="236.0" prefWidth="732.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="236.0" prefWidth="527.0">
+                                 <children>
+                                    <JFXTextField fx:id="purchaseID" alignment="CENTER" labelFloat="true" promptText="Product ID">
+                                       <padding>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="productQ" alignment="CENTER" labelFloat="true" promptText="Quantity">
+                                       <padding>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="236.0" prefWidth="628.0">
+                                 <children>
+                                    <Label fx:id="showpurchase" alignment="CENTER" prefHeight="38.0" prefWidth="335.0" style="-fx-background-color: #2A2E37;" textAlignment="CENTER" textFill="#fcfcfc">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="showbill" alignment="CENTER" prefHeight="38.0" prefWidth="342.0" style="-fx-background-color: #2A2E37;" textAlignment="CENTER" textFill="#f5f5f5">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#pdetails" text="Purchase">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Reciept">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableh" layoutX="2.0" layoutY="-9.0" prefHeight="559.0" prefWidth="751.0">
+                           <columns>
+                              <TableColumn fx:id="hpname" prefWidth="178.0" text="Product Name" />
+                              <TableColumn fx:id="hpID" prefWidth="196.0" text="Product Idea" />
+                              <TableColumn fx:id="hamount" prefWidth="174.0" text="Amount" />
+                              <TableColumn fx:id="hprice" prefWidth="202.0" text="Total Bill" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </center>
+</BorderPane>
