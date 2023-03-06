@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="FXMLDocument.Controller" prefHeight="520.0" prefWidth="885.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="525.0" fitWidth="904.0" layoutX="-1.0" opacity="0.86">
+         <image>
+            <Image url="@clinic.jpg" />
+         </image>
+      </ImageView>
+        <Label fx:id="label" layoutX="391.0" layoutY="478.0" minHeight="16" minWidth="69">
+         <effect>
+            <Blend />
+         </effect></Label>
+      <JFXTextField fx:id="textField1" alignment="TOP_CENTER" layoutX="125.0" layoutY="417.0" opacity="0.52" prefHeight="41.0" prefWidth="224.0" promptText="Password" style="-fx-background-color: ; -fx-border-color: transparent;" visible="false">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font></JFXTextField>
+      <Button layoutX="673.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #34a3a8;" text="SUBMIT" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <effect>
+            <Reflection fraction="0.71" topOpacity="0.65" />
+         </effect></Button>
+      <ImageView blendMode="DARKEN" fitHeight="25.0" fitWidth="28.0" layoutX="603.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="341.0" AnchorPane.topAnchor="159.0">
+         <image>
+            <Image url="@default-user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Blend mode="DARKEN" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="604.0" layoutY="215.0" opacity="0.97" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@f2895840fbcdc23aa9167e02c1b41b8a-key-flat-icon-by-vexels.png" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.63" specularConstant="1.32" specularExponent="5.12">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Button layoutX="663.0" layoutY="417.0" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="24.0" prefWidth="56.0" style="-fx-background-color: transparent;" text="HOME" textFill="WHITE" />
+      <Label fx:id="textLabel" layoutX="459.0" layoutY="360.0" prefHeight="48.0" prefWidth="246.0" textFill="#5e1111">
+         <font>
+            <Font name="Century Schoolbook" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="textField" alignment="TOP_CENTER" layoutX="593.0" layoutY="152.0" opacity="0.52" prefHeight="0.0" prefWidth="224.0" promptText="User ID" style="-fx-border-color: transparent; -fx-background-color: white; -fx-background-radius: 1;">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXTextField>
+      <PasswordField fx:id="pb" alignment="TOP_CENTER" layoutX="593.0" layoutY="204.0" opacity="0.5" prefHeight="41.0" prefWidth="224.0" promptText="Password" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></PasswordField>
+      <Label layoutX="673.0" layoutY="88.0" prefHeight="48.0" prefWidth="95.0" text="Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="490.0" prefHeight="35.0" prefWidth="904.0" style="-fx-background-color: #596173;">
+         <children>
+            <Label layoutX="240.0" layoutY="9.0" opacity="0.74" prefHeight="21.0" prefWidth="449.0" text="© Souvik Kundu, Faisal Rahman, Mustakim Khan, Rifat Ahsan " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

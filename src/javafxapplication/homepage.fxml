@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.HomepageController">
+   <children>
+      <ImageView fitHeight="514.0" fitWidth="915.0" layoutX="-1.0">
+         <image>
+            <Image url="@med.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.09" contrast="0.02" hue="-0.05" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="379.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@doctor%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="558.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@man-icon-38995.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="730.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Boss_user_man_business_supervisor_female.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="422.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.79" style="-fx-background-color: transparent;" text="Doctor">
+         <effect>
+            <Reflection fraction="0.7" topOpacity="0.77" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe Print Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="599.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.79" style="-fx-background-color: transparent;" text="Patient">
+         <font>
+            <Font name="Segoe Print Bold" size="14.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.72" topOpacity="1.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="757.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.79" style="-fx-background-color: transparent;" text="Management">
+         <font>
+            <Font name="Segoe Print Bold" size="14.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.72" topOpacity="1.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <TextField alignment="TOP_CENTER" layoutX="402.0" layoutY="51.0" prefHeight="51.0" prefWidth="448.0" style="-fx-background-color: transparent;" text="ONLINE  MEDICAL  SERVICE">
+         <font>
+            <Font name="Goudy Old Style" size="30.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="0.3" specularConstant="1.37" specularExponent="21.4" surfaceScale="2.32">
+               <light>
+                  <Light.Distant color="#fff0f0" />
+               </light>
+               <bumpInput>
+                  <DropShadow>
+                     <input>
+                        <GaussianBlur />
+                     </input>
+                  </DropShadow>
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </TextField>
+      <AnchorPane layoutX="-2.0" layoutY="480.0" prefHeight="35.0" prefWidth="915.0" style="-fx-background-color: #373c48;">
+         <children>
+            <Label layoutX="265.0" layoutY="9.0" opacity="0.74" prefHeight="21.0" prefWidth="449.0" text="© Souvik Kundu, Faisal Rahman, Mustakim Khan, Rifat Ahsan " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
